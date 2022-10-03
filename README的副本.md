@@ -97,7 +97,8 @@ is millions!
 
 
 ### -Chart
-image 
+Chart
+![Chart](/截屏2022-10-02 下午7.10.47.png)
 
 <img height="200" src="/Users/libinxi/Desktop/大三/Database/workshhop/spreadsheet-analysis-EllianaLi-main/截屏2022-10-02 下午7.10.47.png" width="300"/>(/Users/libinxi/Desktop/大三/Database/workshhop/spreadsheet-analysis-EllianaLi-main/截屏2022-10-02 下午7.10.47.png)
 
