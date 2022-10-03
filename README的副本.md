@@ -99,7 +99,10 @@ is millions!
 ### -Chart
 Chart  
 ![Chart](/Users/libinxi/Desktop/大三/Database/workshhop/spreadsheet-analysis-EllianaLi-main/Picture1.png)
+my chart  
+![my chart](https://github.com/EllianaLi/spreadsheet-analysis-EllianaLi-main/blob/master/Picture1.png)
 
+<img alt="image" height="250" src="https://github.com/EllianaLi/spreadsheet-analysis-EllianaLi-main/blob/master/Picture1.png" width="300"/>
 
 
 The image shows that starting from different years, the budget amount in fiscal year 1-4. Starting 
