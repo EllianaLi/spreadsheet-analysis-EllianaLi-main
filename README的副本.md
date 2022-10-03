@@ -97,9 +97,10 @@ is millions!
 
 
 ### -Chart
+image 
 
-<img height="250" src="/Users/libinxi/Desktop/大三/Database/workshhop/spreadsheet-analysis-EllianaLi-main/截屏2022-10-02 下午7.10.47.png" width="400"/>
-.
+![image](/Users/libinxi/Desktop/大三/Database/workshhop/spreadsheet-analysis-EllianaLi-main/截屏2022-10-02 下午7.10.47.png)
+
 
 The image shows that starting from different years, the budget amount in fiscal year 1-4. Starting 
 from 2019 to 2022, each fiscal year, the budget is below or around 5E+10, however, there is a significant 
