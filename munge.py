@@ -1,15 +1,29 @@
-import urllib.request
 # place your code to clean up the data file below.
-import urllib.parse
-parse_url = urlparse('https://www.geeksforgeeks.org / python-langtons-ant/')
-print(parse_url)
-print("\n")
-unparse_url = urlunparse(parse_url)
-print(unparse_url)
+import csv
+f = open("/Users/wusiteng/Desktop/DB Design/spreadsheet-analysis-Log1c11/data/Capital_Budget.csv", 'r')
+csv_reader = csv.DictReader(f)
+# preparation for output
+csvfile =  open('/Users/wusiteng/Desktop/DB Design/spreadsheet-analysis-Log1c11/data/clean_data.csv', 'w', newline='')
+fieldnames = ["Project Type",'Budget Line', 'Budget Line Title','First Fiscal Year','Fiscal Year 1 Amount', 'Fiscal Year 2 Amount','Fiscal Year 3 Amount','Fiscal Year 4 Amount', 'Total Budget $']
+writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
+writer.writeheader()
 
-def munge():
-    request_url = urllib.request.urlopen('https://data.cityofnewyork.us/City-Government/Capital-Budget/46m8-77gv/data')
-    print(request_url.read())
-
-if __name__ == '__main__':
-    munge()
+# already a pretty clean data
+for line in csv_reader:
+# removing unnecessary columns e.g. funding type, project type name
+    title1 = "Funding Type"
+    title2 = "Project Type Name"
+    title3 = "Published Date"
+    del line[title1]
+    del line[title2]
+    del line[title3]
+# add necessary columns, total budget for 4 fiscal year, ignoring time value of money
+    l = ['Fiscal Year 1 Amount', 'Fiscal Year 2 Amount','Fiscal Year 3 Amount','Fiscal Year 4 Amount']
+    total = 0
+    for key in line.keys():
+        if key in l:
+            total += int(line[key])
+    line['Total Budget $'] = str(total)
+# export to clean_data.csv
+    writer.writerow(line)
+csvfile.close()
